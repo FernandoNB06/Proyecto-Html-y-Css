@@ -1,0 +1,379 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* HEADER */
+  .nav-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  
+  .nav-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .nav-right,
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .main {
+    display: flex;
+    gap: 20px;
+  }
+  
+  summary:hover,
+  .nav-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .icono {
+    pointer-events: none;
+    color: black;
+    text-decoration: none;
+    cursor: default;
+    margin-left: -15px;
+  }
+  
+  .hamburguesa {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Oculto por defecto */
+  }
+  
+  /* Ocultamos el checkbox visualmente */
+  .menu-toggle {
+    display: none;
+  }
+/* HERO TEAMS */
+.hero-teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .texto-teams {
+    flex: 1 1 400px;
+  }
+  
+  .texto-teams h1 {
+    font-size: 32px;
+    color: #0b2c59;
+    margin-bottom: 20px;
+  }
+  
+  .texto-teams h1 span {
+    color: #6b21a8; /* Morado */
+  }
+  
+  .texto-teams p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .botones-teams {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .boton-morado {
+    display: inline-block;
+    background-color: #6b21a8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .boton-blanco {
+    display: inline-block;
+    background-color: transparent;
+    color: #6b21a8;
+    padding: 10px 20px;
+    border: 2px solid #6b21a8;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .boton-blanco:hover {
+    background-color: #6b21a8;
+    color: white;
+  }
+  
+  .enlace-simple {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0067b8;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .enlace-simple:hover {
+    text-decoration: underline;
+  }
+  
+  .imagen-teams {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .imagen-teams img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero-teams {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .botones-teams {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* SECCIÓN SERVICIOS */
+.seccion-servicios {
+    text-align: center;
+    padding: 60px 40px;
+  }
+  
+  .seccion-servicios h2 {
+    font-size: 28px;
+    color: #0b2c59;
+    margin-bottom: 10px;
+  }
+  
+  .seccion-servicios p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .servicios-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .servicio {
+    flex: 1 1 200px;
+    max-width: 220px;
+    text-align: center;
+  }
+  
+  .servicio img {
+    width: 100%;
+    max-width: 150px; /* o 180px si quieres aún más grande */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  
+  .servicio h3 {
+    font-size: 18px;
+    color: #0b2c59;
+    margin-bottom: 10px;
+  }
+  
+  .servicio p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .servicios-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+  /* SECCIÓN FINAL */
+.seccion-final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .texto-final {
+    flex: 1 1 400px;
+  }
+  
+  .texto-final h2 {
+    font-size: 28px;
+    color: #0b2c59;
+    margin-bottom: 20px;
+  }
+  
+  .texto-final p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .botones-final {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .imagen-final {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .imagen-final img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .seccion-final {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .botones-final {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+  /* FOOTER */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    background-color: #f3f3f3;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 200px;
+    margin: 10px;
+    min-width: 180px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 15px;
+  }
+  
+  .footer-column a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    margin-bottom: 6px;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  /* RESPONSIVE HEADER */
+  @media (max-width: 1200px) {
+    .nav-right .texto {
+      display: none;
+    }
+  
+    .icono {
+      pointer-events: auto;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .main,
+    details {
+      display: none;
+    }
+  
+    .hamburguesa {
+      display: block;
+    }
+  
+    .nav-container {
+      padding: 10px 20px;
+      position: relative;
+    }
+  
+    .logo {
+      position: absolute;
+      left: 50%;
+      width: 100px;
+    }
+  
+    .nav-right {
+      gap: 10px;
+    }
+  
+    .menu-toggle:checked ~ .nav-container .main,
+    .menu-toggle:checked ~ .nav-container details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px 0 0 0;
+      background-color: white;
+    }
+  }
+  
+  /* RESPONSIVE FOOTER */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  
+    .footer-column {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  

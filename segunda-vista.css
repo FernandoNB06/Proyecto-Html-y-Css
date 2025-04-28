@@ -1,0 +1,380 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* HEADER */
+  .nav-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  
+  .nav-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .nav-right,
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .main {
+    display: flex;
+    gap: 20px;
+  }
+  
+  summary:hover,
+  .nav-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .icono {
+    pointer-events: none;
+    color: black;
+    text-decoration: none;
+    cursor: default;
+    margin-left: -15px;
+  }
+  
+  .hamburguesa {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Oculto por defecto */
+  }
+  
+  /* Ocultamos el checkbox visualmente */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* HERO WINDOWS */
+.hero-windows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    background: linear-gradient(to right, #cfe8ff, #e6f0ff); /* Fondo clarito */
+    flex-wrap: wrap;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .hero-image {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .hero-texto {
+    flex: 1 1 400px;
+    padding: 20px;
+  }
+  
+  .hero-texto h1 {
+    font-size: 32px;
+    color: #0b2c59;
+    margin-bottom: 20px;
+  }
+  
+  .hero-texto h1 span {
+    color: #1d4ed8;
+  }
+  
+  .hero-texto p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .boton-primario {
+    display: inline-block;
+    background-color: #0067b8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .boton-primario:hover {
+    background-color: #005399;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero-windows {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  
+    .hero-texto {
+      padding: 20px 0;
+    }
+  }
+  
+/* SECCIÓN IA */
+.seccion-ia {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .seccion-ia h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #0b2c59;
+  }
+  
+  .seccion-ia h2 span {
+    color: #1d4ed8;
+  }
+  
+  .seccion-ia p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .boton-secundario {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0 40px;
+    background-color: transparent;
+    color: #0067b8;
+    border: 2px solid #0067b8;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .boton-secundario:hover {
+    background-color: #0067b8;
+    color: white;
+  }
+  
+  /* TARJETAS IA */
+  .cards-ia {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card-ia {
+    width: 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card-ia img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card-ia h3 {
+    font-size: 18px;
+    color: #0b2c59;
+    margin-bottom: 10px;
+  }
+  
+  .card-ia p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .cards-ia {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-ia {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
+  /* SECCIÓN UTILIDADES */
+.seccion-utilidades {
+    background: #f4f0ff;
+    padding: 60px 40px;
+  }
+  
+  .bloque-utilidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .utilidad-imagen img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+  }
+  
+  .utilidad-imagen {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  
+  .utilidad-texto {
+    flex: 1 1 300px;
+    max-width: 500px;
+  }
+  
+  .utilidad-texto h3 {
+    font-size: 22px;
+    color: #0b2c59;
+    margin-bottom: 10px;
+  }
+  
+  .utilidad-texto p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Para invertir el orden imagen/texto */
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .bloque-utilidad {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .reverse {
+      flex-direction: column;
+    }
+  }
+  
+
+  /* FOOTER */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    background-color: #f3f3f3;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 200px;
+    margin: 10px;
+    min-width: 180px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 15px;
+  }
+  
+  .footer-column a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    margin-bottom: 6px;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  /* RESPONSIVE HEADER */
+  @media (max-width: 1200px) {
+    .nav-right .texto {
+      display: none;
+    }
+  
+    .icono {
+      pointer-events: auto;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .main,
+    details {
+      display: none;
+    }
+  
+    .hamburguesa {
+      display: block;
+    }
+  
+    .nav-container {
+      padding: 10px 20px;
+      position: relative;
+    }
+  
+    .logo {
+      position: absolute;
+      left: 50%;
+      width: 100px;
+    }
+  
+    .nav-right {
+      gap: 10px;
+    }
+  
+    .menu-toggle:checked ~ .nav-container .main,
+    .menu-toggle:checked ~ .nav-container details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px 0 0 0;
+      background-color: white;
+    }
+  }
+  
+  /* RESPONSIVE FOOTER */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  
+    .footer-column {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
