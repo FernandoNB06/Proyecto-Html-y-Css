@@ -110,6 +110,10 @@ summary:hover,
     gap: 10px;
   }
 
+  .card p{
+    display: none;
+  }
+
   /*  Cuando el checkbox está marcado, mostramos el contenido */
   .menu-toggle:checked ~ .nav-container .main,
   .menu-toggle:checked ~ .nav-container details {
