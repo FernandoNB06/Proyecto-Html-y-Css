@@ -110,9 +110,7 @@ summary:hover,
     gap: 10px;
   }
 
-  .card p{
-    display: none;
-  }
+  
 
   /*  Cuando el checkbox está marcado, mostramos el contenido */
   .menu-toggle:checked ~ .nav-container .main,
@@ -268,6 +266,9 @@ summary:hover,
   .card img {
     max-width: 100%;
     height: auto;
+  }
+  .card p{
+    display: none;
   }
 }
 
